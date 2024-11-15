@@ -1,0 +1,33 @@
+{
+  "name": "ensuredom",
+  "version": "0.0.1",
+  "description": "Minimal SPA/SSR framework",
+  "main": "dist/index.cjs",
+  "module": "src/index.mjs",
+  "exports": {
+    ".": {
+      "types": "./src/index.d.ts",
+      "import": "./src/index.mjs",
+      "require": "./dist/index.cjs"
+    }
+  },
+  "scripts": {
+    "test": "npm run test -w test",
+    "example": "npm run dev -w example"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/eihigh/ensuredom.git"
+  },
+  "author": "eihigh",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/eihigh/ensuredom/issues"
+  },
+  "homepage": "https://github.com/eihigh/ensuredom#readme",
+  "workspaces": [
+    ".",
+    "test",
+    "example"
+  ]
+}
